@@ -1,0 +1,32 @@
+.margenes {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2e2a2a;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.contenedor {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .logo {
+    color: crimson;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+
+}
