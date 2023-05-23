@@ -11,7 +11,7 @@ body {
 }
 
 .contenedor {
-    text-align: center;
+    
     width: 90%;
     margin: auto;
     display: flex;
@@ -35,6 +35,20 @@ header nav a{
     color: aquamarine;
     text-decoration: none;
     margin-right: 20px;
+
+
+}
+
+
+/*----------------------------------------------*/
+
+.pel_principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: aliceblue;
+    background: url(../Imagenes/goldfinger.jpg);
+    background-position: center center;
     
+
 
 }
