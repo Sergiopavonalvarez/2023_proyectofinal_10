@@ -48,7 +48,15 @@ header nav a{
     color: aliceblue;
     background: url(../Imagenes/goldfinger.jpg);
     background-position: center center;
-    
+  
+}
 
+.pelicula-principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 100px;
 
+}
+
+.descripcion{
+    color: royalblue;
 }
