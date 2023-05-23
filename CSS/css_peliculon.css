@@ -30,3 +30,11 @@ header .logo {
     font-size: 40px;
 
 }
+
+header nav a{
+    color: aquamarine;
+    text-decoration: none;
+    margin-right: 20px;
+    
+
+}
