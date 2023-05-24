@@ -2,96 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/css_peliculon.css">
-    <script src="../2023_proyectofinal_10/JS/js_peliculon.js"></script>
-    <title>Peliculon S.L.</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/css_peliculon.css">
+  <script src="../2023_proyectofinal_10/JS/js_peliculon.js"></script>
+  <title>Peliculon S.L.</title>
+
 </head>
 
 <body>
-    <header>
-        <div class="contenedor">
-            <h2 class="logo">PELICULON S.L.</h2>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#sean-connery">Sean Connery</a>
-                <a href="#rogere-moore">Roger Moore</a>
-                <a href="Login.html">Salir</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="pel_principal">
-            <div class="contenedor">
-                <h3 class="titulo">Goldfinger</h3>
-                <p class="descripcion">El famoso agente secreto, James Bond, tiene una nueva misión: evitar que Auric
-                    Goldfinger contamine las reservas de oro de los Estados Unidos y se convierta así en el hombre más
-                    poderoso de la Tierra. El objetivo del villano Auric es crear el caos en occidente</p>
-                <a href="https://www.youtube.com/watch?v=EBJ_Nm8KXKc" target="_blank" class="boton"><button role="boton"
-                        class="boton">Reproducir</button></a>
+  <header>
+    <div class="contenedor">
+      <h2 class="logo">PELICULON S.L.</h2>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#sean-connery">Sean Connery</a>
+        <a href="#rogere-moore">Roger Moore</a>
+        <a href="Login.html">Salir</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="pel_principal">
+      <div class="contenedor">
+        <h3 class="titulo">Goldfinger</h3>
+        <p class="descripcion">El famoso agente secreto, James Bond, tiene una nueva misión: evitar que Auric
+          Goldfinger contamine las reservas de oro de los Estados Unidos y se convierta así en el hombre más
+          poderoso de la Tierra. El objetivo del villano Auric es crear el caos en occidente</p>
+        <a href="https://www.youtube.com/watch?v=EBJ_Nm8KXKc" target="_self" class="boton reproducir">Reproducir</a>
+        <a href="https://www.filmaffinity.com/es/film734628.html" target="_self" class="boton informacion">Informacion</a>
+      </div>
+    </div>
 
+    <h3 id="sean-connery" class="titulo-imagenes">Sean Connery</h3>
+    <div class="imagenes-container">
+      <a href="" target="_self" onclick="cambiarFondo('.pel_principal', 'Imagenes/no.jpg', event, '007 contra el doctor No', 'El agente secreto James Bond se enfrenta al malvado Dr. No en una peligrosa misión para salvar al mundo.')">
+        <img class="imagen-sean" src="Imagenes/no.jpg" alt="Imagen 1">
+      </a>
+      <a href="" target="_self" onclick="cambiarFondo('.pel_principal', 'Imagenes/rusia.jpg', event, 'Desde Rusia con amor', 'El agente secreto James Bond se enfrenta al malvado Dr. No en una peligrosa misión para salvar al mundo.')">
+        <img class="imagen-sean" src="Imagenes/rusia.jpg" alt="Imagen 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/goldfinger.jpeg" alt="Imagen 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/trueno.jpg" alt="Imagen 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/solo.jpg" alt="Imagen 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/diamantes.jpg" alt="Imagen 1">
+      </a>
+    </div>
 
-                <a href="https://www.filmaffinity.com/es/film734628.html" target="_blank" class="boton"><button
-                        role="boton" class="boton">Informacion</button></a>
-            </div>
-        </div>
+    <h3 id="rogere-moore" class="titulo-imagenes">Roger Moore</h3>
+    <div class="imagenes-container">
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/vive.jpeg" alt="Imagen 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/pistola.jpg" alt="Imagen 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/espia.jpg" alt="Imagen 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/moonraker.jpg" alt="Imagen 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/ojos.jpg" alt="Imagen 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
+        <img class="imagen-sean" src="Imagenes/Octopussy.jpg" alt="Imagen 1">
+      </a>
+    </div>
 
+  </main>
 
-
-        <h3 id="sean-connery"class="titulo-imagenes">Sean Connery</h3> <!-- Nuevo elemento h3 para el título -->
-
-        <div class="imagenes-container">
-            <a href="" target="_self">
-                <img class="imagen-sean" src="Imagenes/no.jpg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/rusia.jpg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/goldfinger.jpeg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/trueno.jpg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/solo.jpg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/diamantes.jpg" alt="Imagen 1">
-            </a>
-        </div>
-        
-        <h3 id="rogere-moore"class="titulo-imagenes">Rogere Moore</h3> <!-- Nuevo elemento h3 para el título -->
-
-        <div class="imagenes-container">
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/vive.jpeg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/pistola.jpg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/espia.jpg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/moonraker.jpg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/ojos.jpg" alt="Imagen 1">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cBwDibYQWsk" target="_blank">
-                <img class="imagen-sean" src="Imagenes/Octopussy.jpg" alt="Imagen 1">
-            </a>
-        </div>
-    </main>
 </body>
 
 </html>
+
+
+
+
+
+
+
