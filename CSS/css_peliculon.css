@@ -114,8 +114,6 @@ header nav a {
     }
 }
 
-
-
 .imagenes-container {
     display: flex;
     justify-content: center;
@@ -151,13 +149,20 @@ header nav a {
         flex: 0 0 100%;
     }
 }
+
 .titulo-imagenes {
     font-family: 'Open Sans', sans-serif; /* Aplica la misma tipografía que el logo */
-    color: crimson;
+    color: rgb(218, 205, 207);
     font-weight: 600;
     font-size: 30px;
     margin-bottom: 5px;
-    margin-left: 40px;
+    margin-left: 140px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
     text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+.imagenes-container .imagen-sean {
+    width: 200px; /* Ajusta el tamaño deseado */
+    height: 300px; /* Ajusta el tamaño deseado */
+    object-fit: cover; /* Ajusta el tipo de ajuste */
 }
