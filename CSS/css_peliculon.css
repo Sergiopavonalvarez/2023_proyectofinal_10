@@ -46,6 +46,7 @@ header nav a {
     margin-bottom: 50px;
     display: flex;
     align-items: end;
+    
 }
 
 .pel_principal .contenedor {
@@ -73,17 +74,18 @@ header nav a {
 }
 
 .pel_principal .boton:hover {
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo ligeramente transparente al hacer hover */
     color: #000;
 }
 
 .pel_principal .boton {
-    background: transparent;
+    
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    border-radius: 5px;
-    padding: 15px 12px;
+    
+    padding: 10px 10px;
     color: aliceblue;
-    margin-right: 20px;
+    
     cursor: pointer;
     transition: .3s ease all;
     font-size: 18px;
