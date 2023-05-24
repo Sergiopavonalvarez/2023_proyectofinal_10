@@ -1,34 +1,68 @@
+@font-face {
+    font-family: 'Eurostile-Bold-Extended';
+    src: url('fonts/eurostile-bold-extended.ttf') format('truetype');
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
     background-image: url(../Imagenes/celebrity-sean-connery-wallpaper-preview.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-  }
+}
 
-  .container {
+.container {
     width: 700px;
     height: auto;
     padding: 40px;
     border-radius: 10px;
     text-align: center;
+}
 
-  }
+.inicio_sesion {
+    color: #D4AF37;
+    font-size: 50px;
+    font-family: 'Eurostile-Bold-Extended', sans-serif;
+    font-style: italic;
+}
 
-  .container label,
-  .container input {
+.container label{
     display: block;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    color: #D4AF37;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Eurostile-Bold-Extended', sans-serif;
+    font-style: italic;
+
+}
+.container input {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #D4AF37;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Eurostile-Bold-Extended', sans-serif;
+    font-style: italic;
+    background-color: #f8e097; 
+    padding: 5px; 
+    border: none;
   }
+  
 
   .container input[type="submit"] {
     margin-top: 20px;
     align-items: center;
-  }
+    background-color: #f8e097;
+    border: none;
+    font-style: normal;
+    color: black;
+}
