@@ -113,3 +113,41 @@ header nav a {
         line-height: 24px;
     }
 }
+
+
+
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagenes-container a {
+    flex: 0 0 250px; /* Ancho fijo de cada imagen */
+    margin: 10px;
+}
+
+.imagenes-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.imagenes-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries para ajustar el tamaño en diferentes tamaños de pantalla */
+@media screen and (max-width: 768px) {
+    .imagenes-container a {
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imagenes-container a {
+        flex: 0 0 100%;
+    }
+}
