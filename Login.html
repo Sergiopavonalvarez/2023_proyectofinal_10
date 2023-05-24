@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>logIN</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/css_logIn.css'>
-    <script src='JS/JS_LogIn-1.js'></script>
+    <script>
+        function iniciarSesion() {
+            var usuario = document.getElementById('nombre').value;
+            var password = document.getElementById('password').value;
+
+            // Verificar las credenciales del usuario (puedes agregar tu lógica de autenticación aquí)
+            if (usuario === 'admin' && password === 'contraseña') {
+                // Inicio de sesión exitoso, redirigir al usuario a la página web
+                window.location.href = 'peliculon-1.html';
+            } else {
+                // Las credenciales son incorrectas, mostrar un mensaje de error
+                alert('Credenciales incorrectas. Por favor, intenta nuevamente.');
+            }
+        }
+    </script>
 </head>
-
 <body>
-
-    <body>
-        <div class="container">
-
-            <h1 class="inicio_sesion"> <strong>Inicio de sesion</strong> </h1>
+    <div class="container">
+        <h1 class="inicio_sesion"><strong>Inicio de sesión</strong></h1>
+        <form onsubmit="iniciarSesion(); return false;">
             <label for="nombre">Usuario</label>
             <input type="text" id="nombre" name="nombre">
             <label for="contraseña">Contraseña</label>
             <input type="password" id="password" name="password">
             <input type="submit" value="Enviar">
-        </div>
-    </body>
-
+        </form>
+    </div>
 </body>
-
 </html>
