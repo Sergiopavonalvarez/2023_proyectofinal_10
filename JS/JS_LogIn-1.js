@@ -1,12 +1,13 @@
-var enviarButton = document.querySelector('input[type="submit"]');
+function iniciarSesion() {
+  var usuario = document.getElementById('nombre').value;
+  var password = document.getElementById('password').value;
 
-
-enviarButton.addEventListener('click', function() {
-  // Obtener los valores de los campos de entrada
-  var nombre = document.getElementById('nombre').value;
-  var contraseña = document.getElementById('password').value;
-
-
-  console.log('Usuario:', nombre);
-  console.log('Contraseña:', contraseña);
-});
+  // Verificar las credenciales del usuario (puedes agregar tu lógica de autenticación aquí)
+  if (usuario === 'admin' && password === 'contraseña') {
+      // Inicio de sesión exitoso, redirigir al usuario a la página web
+      window.location.href = 'peliculon-1.html';
+  } else {
+      // Las credenciales son incorrectas, mostrar un mensaje de error
+      alert('Credenciales incorrectas. Por favor, intenta nuevamente.');
+  }
+}
