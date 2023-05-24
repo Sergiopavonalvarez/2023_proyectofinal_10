@@ -67,7 +67,7 @@ header nav a {
     font-weight: normal;
     font-size: 20px;
     line-height: 28px;
-    max-width: 50%;
+    max-width: 35%;
     margin-bottom: 20px;
     align-self: flex-start;
 }
@@ -150,4 +150,14 @@ header nav a {
     .imagenes-container a {
         flex: 0 0 100%;
     }
+}
+.titulo-imagenes {
+    font-family: 'Open Sans', sans-serif; /* Aplica la misma tipografía que el logo */
+    color: crimson;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
 }
