@@ -22,9 +22,16 @@ function cambiarFondo(selector, imagen,color, event, titulo, descripcion, enlace
   var enlaceReproducir = '';
   var enlaceInformacion = '';
 
+
+
   tituloElemento.style.color = color;
   descripcionElemento.style.color = color;
 
+}
+
+function scrollToPrincipal() {
+  var principal = document.getElementById("pel_principal");
+  principal.scrollIntoView({ behavior: "smooth" });
 }
 
 function scrollToMainSection() {
