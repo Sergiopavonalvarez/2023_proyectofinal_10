@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="CSS/css_registro.css">
+  <script src="../2023_proyectofinal_10/JS/JS_Registro.js"></script>
+</head>
+
+<body>
+  <div id="registro">
+    <h1><strong>Registro de Usuario</strong></h1>
+    <form onsubmit="registrar(); return false;">
+      <label for="registro_nombre"><strong>Nombre:</strong></label>
+      <input type="text" id="registro_nombre" name="registro_nombre" required><br><br>
+      <label for="registro_contrasena"><strong>Contraseña:</strong></label>
+      <input type="password" id="registro_contrasena" name="registro_contrasena" required><br><br>
+      <input type="submit" value="Registrarse">
+    </form>
+  </div>
+</body>
+
+</html>
