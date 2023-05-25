@@ -17,11 +17,16 @@
     var descripcionElemento = document.querySelector(selector + ' .descripcion');
     tituloElemento.textContent = titulo;
     descripcionElemento.textContent = descripcion;
-  }
- var enlaceReproducir = '';
+    var tituloElemento = document.querySelector(selector + ' .titulo');
+var descripcionElemento = document.querySelector(selector + ' .descripcion');
+var enlaceReproducir = '';
 var enlaceInformacion = '';
+}
+
 
 cambiarFondo('#selector', 'ruta/imagen.jpg', event, 'Nuevo título', 'Nueva descripción', enlaceReproducir, enlaceInformacion);
+
+
 
 
 
