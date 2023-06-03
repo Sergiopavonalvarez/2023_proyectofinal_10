@@ -22,8 +22,6 @@ function cambiarFondo(selector, imagen,color, event, titulo, descripcion, enlace
   var enlaceReproducir = '';
   var enlaceInformacion = '';
 
-
-
   tituloElemento.style.color = color;
   descripcionElemento.style.color = color;
 
@@ -46,6 +44,25 @@ function scrollToMainSection() {
   `;
   pelPrincipal.style.backgroundImage = "url('Imagenes/portada.jpg')";
 }
+
+
+
+
+// Obtén todos los botones "Reproducir"
+var reproducirButtons = document.querySelectorAll('.reproducir');
+
+// Agrega un listener de evento a cada botón "Reproducir" para abrir el frame con su respectivo trailer
+reproducirButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    var trailerURL = this.dataset.trailerUrl;
+    abrirTrailer(trailerURL);
+  });
+});
+
+
+
+
+
 
 
 
